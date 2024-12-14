@@ -1,0 +1,169 @@
+a {
+  color: black;
+  text-decoration: none;
+  margin: 25px;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0%;
+  justify-content: center;
+  background: url(dino.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.navbar{
+  background-color: #333;
+  overflow: hidden; /*P asegurar de que no haya desbordamientos*/
+  display: flex;/*Alinea los elementos en una fila*/
+  justify-content: space-around;/*Esacia uniformemente os elementos*/
+  padding: 0.5em;
+  width: 100%;
+  margin-bottom: 4vh;
+  position: fixed;
+  align-items: center;
+  flex-direction: row;
+  font-weight: bold;
+}
+.navbar a{
+  color: rgb(255, 255, 255);
+  text-decoration: none;/*Quitar el subrayado*/
+  padding: 0.5em 1em; /*Espacio alrededor de los enlaces*/
+}
+.navbar a:hover{
+  color: #F2A3B3;
+  text-decoration: underline;
+  transition: 0.3s;
+  border-radius: 20px;
+}
+/*Contenido*/
+.container{
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-top: 4em;
+  margin-top: 2em;
+}
+
+.card-horizontal {
+  display: flex;
+  align-items: center; /* Alinear elementos verticalmente */
+  gap: 20px; /* Espacio entre la imagen y la descripción */
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 20px; 
+}
+.card-image {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+}
+.card-description {
+  flex: 1; /* Hacer que la descripción ocupe el espacio disponible */
+}
+
+footer{
+  margin-bottom: 4em;
+  padding-bottom: 2em;
+  text-align: center;
+  color: white;
+}
+/*Cookies footer*/
+.cookie-footer {
+  position: fixed; /* Siempre visible al final de la pantalla */
+  bottom: 0; /* Pegado a la parte inferior */
+  left: 0;
+  right: 0;
+  background-color: #F2A3B3; /* Fondo oscuro para que destaque */
+  color: #fff; /* Texto en blanco para buen contraste */
+  padding: 1em;
+  display: flex; /* Organiza el contenido de manera horizontal */
+  justify-content: space-between; /* Espacia el texto y el botón */
+  align-items: center;
+  margin-top: 2em;
+}
+.cookie-footer button {
+  background-color: #F2A3B3; /* Verde para el botón */
+  color: rgb(243, 8, 243);
+  border: none;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  text-decoration: underline;
+  font-weight: bold;
+}
+.cookie-footer button:hover {
+  background-color: #45a049; /* Efecto al pasar el ratón sobre el botón */
+  color: white;
+}
+#mas {
+  color: white;
+  text-decoration: underline;
+}
+ 
+
+.intro-title{
+  text-align: center;
+  margin-top: 4em;
+  font-size: xx-large;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.intro-text, .contacto, .fotos{
+  margin: 3em;
+  font-size: large;
+}
+.intro-text img{
+  width: 5vh;
+}
+.contacto h2{
+  text-align: center;
+  margin-top: 2sem;
+  font-size: x-large;
+}
+.contacto img{
+  width: 9vh;
+  justify-content: space-around;
+  margin-right: 1em;
+}
+.contacto img:hover{
+  border: 7px solid transparent;
+  border-radius: 10%;
+  background-color: white;
+  cursor: pointer;
+}
+.rrss{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 0;
+}
+.pic{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.pic img{
+  height: 45vh;
+  justify-content: space-around;
+  margin-bottom: 2em;
+}
+.pic img:hover{
+  border: 3vh solid #F2A3B3;
+  border-radius: 10%;
+  cursor: pointer;
+}
+/* Diseño adaptable */
+@media (max-width: 600px) {
+  .card-horizontal {
+    flex-direction: column; /* Apila la imagen y la descripción en pantallas pequeñas */
+    align-items: flex-start; /* Alinear a la izquierda en modo columna */
+  }
+}
